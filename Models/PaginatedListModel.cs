@@ -1,0 +1,10 @@
+namespace VTBlockBackend.Models;
+
+public class PaginatedListModel<T>
+{
+    public List<T>? data { get; set; }
+    public int currentPage { get; set; }
+    public int countPage { get; set; }
+    public Boolean isNext { get; set; }
+    public Boolean isPrev { get; set; }
+}
